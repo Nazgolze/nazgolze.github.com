@@ -1,1 +1,1 @@
-http://nazgolze.github.com
+http://nazgolze.github.io

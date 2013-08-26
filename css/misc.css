@@ -6,18 +6,20 @@
   position: fixed;
 }
 
-.tumblr_post {
-  border-color: white;
-  border-width: 1px;
-  border-style: solid;
-}
-
-.spotify_audio_player {
-  height: 180px;
-}
-
 hr {
   border: 0;
   height: 1px;
   background-color:#FFFFFF;
+}
+
+#me {
+  cursor: pointer;
+}
+
+.title {
+  color: #999999;
+}
+
+.title:hover {
+  color: #555555;
 }

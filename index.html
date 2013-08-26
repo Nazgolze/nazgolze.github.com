@@ -1,77 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/misc.css">
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/JavaScript"  src="js/bootstrap.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-</script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+---
+layout: default
+title: Juan's Personal Page 
+---
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-38167739-1']);
-    _gaq.push(['_setDomainName','github.io']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-
-</script>
-
-<title>Juan's Personal Page</title>
-</head>
-<body>
-<br>
-  <div class="container-fluid">
-    <div class="row-fluid">
-      
-      <div class="span2">
-        <div class="tabbable tabs-left fixed">
-          <ul class="nav nav-tabs hidden-phone" id="myTab">
-            <li>
-              <img src="http://1.gravatar.com/avatar/77b8b96441e8095cc8ae161f398f4534" class="img-polaroid" width=70 height=70 /><br>
-              <h5></h5>
-            </li>
-            <li class="active"><a href="#tab1" data-toggle="tab">About</a></li>
-            <li><a href="#tab2" data-toggle="tab">Blog</a></li>
-            <li><br><br><br><br><br><br></li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="span9">
-        <div class="pagination-centered">
-          <h2>Juan Gonzalez</h2><hr>
-          <div class="visible-phone tabbable">
-            <img src="http://1.gravatar.com/avatar/77b8b96441e8095cc8ae161f398f4534" class="img-polaroid" width=70 height=70 /><br>
-            <ul class="nav nav-tabs" id="myTab">
-              <li class="active"><a href="#tab1" data-toggle="tab">About</a></li>
-              <li><a href="#tab2" data-toggle="tab">Blog</a></li>
-          </div> 
-        </div>
-          <div class="tab-content">
-            <div class="tab-pane active" id="tab1">
-              <p>I'm currently a C developer (with the occasional python, html, javascript, bash, zsh, ....) at <a href="http://www.ecessa.com">Ecessa</a> in Plymouth, MN.  In my free time, I read, code, play Minecraft, explore the twin cities and more.  I majored in Computer Science, Spanish and minored in Math, to give you an idea of where my interests lie.</p>
-              <p>I've recently created this site (still in progress) and will update it with more info as I expand my online presence and start releasing more of my code to the public (some old, some new).</p>
-            </div>
-            <div class="tab-pane" id="tab2">
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    </div>
-  </div>
-</body>
-</html>
+<div id="test">
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
