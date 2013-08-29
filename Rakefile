@@ -1,4 +1,7 @@
-GITHUB_REPONAME = "nazgolze/nazgolze.github.com"
+require '/usr/local/lib64/ruby/gems/1.9.1/gems/jekyll-1.1.2/lib/jekyll.rb'
+require 'tmpdir'
+
+GITHUB_REPONAME = "Nazgolze/nazgolze.github.com"
 
 desc "Generate blog files"
 task :generate do
