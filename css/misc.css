@@ -9,7 +9,7 @@
 hr {
   border: 0;
   height: 1px;
-  background-color:#FFFFFF;
+  background-color:#999999;
 }
 
 #me {
@@ -22,4 +22,16 @@ hr {
 
 .title:hover {
   color: #555555;
+}
+
+.debug {
+  border: 1px solid white; 
+}
+
+.mytable {
+  table-layout: fixed;
+}
+
+.scrollable{
+  overflow-x: auto;
 }

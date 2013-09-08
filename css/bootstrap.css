@@ -3117,7 +3117,7 @@ input[type="submit"].btn.btn-mini {
   line-height: 14px;
 }
 .nav-tabs {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #999;
 }
 .nav-tabs > li {
   margin-bottom: -1px;
@@ -3278,7 +3278,7 @@ input[type="submit"].btn.btn-mini {
   display: block;
 }
 .tabs-below > .nav-tabs {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #999;
 }
 .tabs-below > .nav-tabs > li {
   margin-top: -1px;
@@ -3310,7 +3310,7 @@ input[type="submit"].btn.btn-mini {
 .tabs-left > .nav-tabs {
   float: left;
   margin-right: 19px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #999;
 }
 .tabs-left > .nav-tabs > li > a {
   margin-right: -1px;
@@ -3319,17 +3319,17 @@ input[type="submit"].btn.btn-mini {
   border-radius: 4px 0 0 4px;
 }
 .tabs-left > .nav-tabs > li > a:hover {
-  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+  border-color: #eeeeee #999999 #eeeeee #eeeeee;
 }
 .tabs-left > .nav-tabs .active > a,
 .tabs-left > .nav-tabs .active > a:hover {
-  border-color: #ddd transparent #ddd #ddd;
+  border-color: #999 transparent #999 #999;
   *border-right-color: #ffffff;
 }
 .tabs-right > .nav-tabs {
   float: right;
   margin-left: 19px;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #999;
 }
 .tabs-right > .nav-tabs > li > a {
   margin-left: -1px;
@@ -3338,11 +3338,11 @@ input[type="submit"].btn.btn-mini {
   border-radius: 0 4px 4px 0;
 }
 .tabs-right > .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+  border-color: #eeeeee #eeeeee #eeeeee #999999;
 }
 .tabs-right > .nav-tabs .active > a,
 .tabs-right > .nav-tabs .active > a:hover {
-  border-color: #ddd #ddd #ddd transparent;
+  border-color: #999 #999 #999 transparent;
   *border-left-color: #ffffff;
 }
 .nav > .disabled > a {

@@ -43,6 +43,7 @@
       $('.nav-tabs a').on('shown', function (e) {
         window.location.hash = e.target.hash;
       });
+      
   });
 </script>
 
@@ -83,13 +84,14 @@
               <p>I've recently created this site (still in progress) and will update it with more info as I expand my online presence and start releasing more of my code to the public (some old, some new).</p>
             </div>
             <div class="tab-pane" id="tab2">
-              {{ content }}
-            </div>
-          </div>
-        </div>
-      </div>
+              <div id="test">    
+                {{ content }}
+              </div>
+          </div> <!-- tab-pane -->
+        </div>   <!-- tab-content -->
+      </div>     <!-- span9 -->
     
-    </div>
-  </div>
+    </div>       <!-- row-fluid -->
+  </div>         <!-- container-fluid -->
 </body>
 </html>
