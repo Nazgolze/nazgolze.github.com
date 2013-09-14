@@ -78,15 +78,27 @@
               <li><a href="#tab2" data-toggle="tab">Blog</a></li>
           </div> 
         </div>
-          <div class="tab-content">
-            <div class="tab-pane active" id="tab1">
-              <p>I'm currently a C developer (with the occasional python, html, javascript, bash, zsh, ....) at <a href="http://www.ecessa.com">Ecessa</a> in Plymouth, MN.  In my free time, I read, code, play Minecraft, explore the twin cities and more.  I majored in Computer Science, Spanish and minored in Math, to give you an idea of where my interests lie.</p>
-              <p>I've recently created this site (still in progress) and will update it with more info as I expand my online presence and start releasing more of my code to the public (some old, some new).</p>
-            </div>
-            <div class="tab-pane" id="tab2">
-              <div id="test">    
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab1">
+            <p>I'm currently a C developer (with the occasional python, html, javascript, bash, zsh, ....) at <a href="http://www.ecessa.com">Ecessa</a> in Plymouth, MN.  In my free time, I read, code, play Minecraft, explore the twin cities and more.  I majored in Computer Science, Spanish and minored in Math, to give you an idea of where my interests lie.</p>
+            <p>I've recently created this site (still in progress) and will update it with more info as I expand my online presence and start releasing more of my code to the public (some old, some new).</p>
+          </div>
+          <div class="tab-pane" id="tab2">
+            <div class="row-fluid">
+              <div id="test" class="span10">    
                 {{ content }}
               </div>
+              <div class="span2 hidden-phone" style="border-left: solid 1px #888">
+                <h5 style="line-height: 1;">&nbsp;Recent Posts</h5>
+                <ul class="posts">
+                  {% for post in site.posts %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a><br>
+                        <span>{{ post.date | date_to_string }}</span>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div> <!-- row -->
           </div> <!-- tab-pane -->
         </div>   <!-- tab-content -->
       </div>     <!-- span9 -->
