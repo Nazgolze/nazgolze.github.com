@@ -9,10 +9,11 @@ layout: default
 <p>{{ content }}</p>
 </div>
 <hr>
+<!-- test: "http://{{ site.host}}{{ page.url }}" -->
 <script src="https://apis.google.com/js/plusone.js">
 </script>
 <g:comments
-href="{{ page.url }}"
+href="http://{{ site.host }}{{ page.url }}"
 width="642"
 first_party_property="BLOGGER"
 view_type="FILTERED_POSTMOD">
