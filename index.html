@@ -2,6 +2,19 @@
 layout: default
 title: Juan's Personal Page 
 ---
+{% for post in site.posts %}
+<div>
+<h3 style="margin: 0; line-height: 1;"><a href="{{ post.url }}" class="title">{{ post.title }}</a></h3>
+<small>{{ post.date | date_to_string }}</small>
+<br>
+<div class="post">
+<p>{{ post.excerpt }}</p>
+<a href="{{ post.url }}">Read more...</a>
+</div>
+<hr>
+</div>
+{% endfor %}
+<!--
 <div id="test">
   <ul class="posts">
     {% for post in site.posts %}
@@ -11,3 +24,4 @@ title: Juan's Personal Page
     {% endfor %}
   </ul>
 </div>
+-->

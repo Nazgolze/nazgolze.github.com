@@ -2,3 +2,4 @@ name: Juan's Personal Page
 pygments: true
 permalink: date
 markdown: maruku
+excerpt_separator: "<!--more-->"
