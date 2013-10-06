@@ -39,3 +39,7 @@ hr {
 div[id^='___comments_'], div[id^='___comments_'] iframe {
   width: 100% !important;
 }
+
+.iHa {
+  background-color: #333;
+}

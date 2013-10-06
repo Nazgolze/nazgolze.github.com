@@ -1,4 +1,4 @@
-require '/usr/local/lib64/ruby/gems/1.9.1/gems/jekyll-1.1.2/lib/jekyll.rb'
+require '~/.gem/ruby/2.0.0/gems/jekyll-1.2.1/lib/jekyll.rb'
 require 'tmpdir'
 
 GITHUB_REPONAME = "Nazgolze/nazgolze.github.com"
