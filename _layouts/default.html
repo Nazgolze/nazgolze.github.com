@@ -66,7 +66,7 @@
               <h5></h5>
               <a href="https://github.com/Nazgolze"><img src="/img/github.png"/></a>
               <a href="https://plus.google.com/u/0/104154658466859206272?rel=author"><img src="/img/google-plus.png"/></a>
-              <a href="#" rel="tooltip" title="Coming soon..."><img src="/img/rss.png"/></a>
+              <a href="/feed.xml"><img src="/img/rss.png"/></a>
               <h5></h5>
               </div>
             </li>
@@ -85,7 +85,7 @@
               <h5></h5>
               <a href="https://github.com/Nazgolze"><img src="/img/github.png"/></a>
               <a href="https://plus.google.com/u/0/104154658466859206272?rel=author"><img src="/img/google-plus.png"/></a>
-              <a href="#" rel="tooltip" title="Coming soon..."><img src="/img/rss.png"/></a>
+              <a href="/feed.xml"><img src="/img/rss.png"/></a>
               <h5></h5>
             <ul class="nav nav-tabs" id="myTab">
               <li class="active"><a href="#tab1" data-toggle="tab">About</a></li>
@@ -105,7 +105,7 @@
               <div class="span2 hidden-phone" style="border-left: solid 1px #888">
                 <h5 style="line-height: 1;">&nbsp;Recent Posts</h5>
                 <ul class="posts">
-                  {% for post in site.posts %}
+                  {% for post in site.posts limit:5 %}
                     <li><a href="{{ post.url }}">{{ post.title }}</a><br>
                         <span>{{ post.date | date_to_string }}</span>
                     </li>
