@@ -3,6 +3,7 @@ highlighter: pygments
 permalink: date
 markdown: kramdown
 excerpt_separator: "<!--more-->"
+future: true
 plugins:
   - jekyll-sitemap
   - jekyll-feed
