@@ -1,0 +1,45 @@
+.margin {
+  margin: 10px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color:#999999;
+}
+
+#me {
+  cursor: pointer;
+}
+
+.title {
+  color: #999999;
+}
+
+.title:hover {
+  color: #555555;
+}
+
+.debug {
+  border: 1px solid white; 
+}
+
+.mytable {
+  table-layout: fixed;
+}
+
+.scrollable{
+  overflow-x: auto;
+}
+
+div[id^='___comments_'], div[id^='___comments_'] iframe {
+  width: 100% !important;
+}
+
+.iHa {
+  background-color: #333;
+}
