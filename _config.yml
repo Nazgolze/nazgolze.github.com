@@ -1,5 +1,8 @@
 name: Juan's Personal Page 
-pygments: true
+highlighter: pygments
 permalink: date
-markdown: maruku
+markdown: kramdown
 excerpt_separator: "<!--more-->"
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
